@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>种地游戏</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+        <h1>🌾 种地游戏</h1>
+        <div id="stats">
+          <div class="stat-item">💰 金钱: <span id="money">100</span></div>
+          <div class="stat-item">🌧️ 天气: <span id="weather">晴天</span></div>
+          <div class="stat-item">⏳ 时间: <span id="time">第 1 天</span></div>
+        </div>
+        <div id="farm"></div>
+        <div id="controls">
+          <button id="water-button" class="control-button">💧 浇水</button>
+          <button id="shop-button" class="control-button">🛒 商店</button>
+          <button id="upgrade-button" class="control-button">🔧 升级</button>
+        </div>
+      </div>
+      <div id="shop" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>🛒 商店</h2>
+          <div id="shop-items"></div>
+        </div>
+      </div>
+      <div id="upgrade" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>🔧 升级</h2>
+          <div id="upgrade-items"></div>
+        </div>
+      </div>
+      <script src="main.js"></script>
+    </body>
+    </html>
